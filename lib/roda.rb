@@ -83,9 +83,9 @@ class Roda
         # Roda does not support blocks with required keyword arguments if the
         # expected arity is 0 or 1.
         def define_roda_method(meth, expected_arity, &block)
-          if meth.is_a?(String)
-            meth = roda_method_name(meth)
-          end
+          # if meth.is_a?(String)
+          #   meth = roda_method_name(meth)
+          # end
           call_meth = meth
 
           # RODA4: Switch to false # :warn in last Roda 3 version

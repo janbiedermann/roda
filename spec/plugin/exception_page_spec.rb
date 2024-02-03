@@ -192,7 +192,7 @@ describe "exception_page plugin" do
 
   it "should handle backtrace lines in unexpected forms" do
     ep_app do |e|
-      e.backtrace.first.upcase!
+      e.backtrace.first.upcase
       e.backtrace[0] = ''
       exception_page(e)
     end

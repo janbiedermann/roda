@@ -51,3 +51,6 @@ class Roda
     end
   end
 end
+
+require 'roda/plugins/direct_call'
+require 'roda/plugins/_optimized_matching'
